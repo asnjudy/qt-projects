@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Generated Files">
@@ -25,17 +25,56 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Header Files\derivation">
+      <UniqueIdentifier>{1719c1a6-5f28-47b9-bfff-79f43689d445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\derivation\overload">
+      <UniqueIdentifier>{9e36cfee-8302-461a-b13c-2ad1cf9bf23a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\derivation">
+      <UniqueIdentifier>{f512034a-2e3a-43ee-81b9-17d380ba5290}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\derivation\overload">
+      <UniqueIdentifier>{ee543a51-cc9c-4833-932e-c639ec8ec2d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\derivation\assigncopy">
+      <UniqueIdentifier>{d4402876-4e43-4547-af30-e12a9aac08dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\derivation\assigncopy">
+      <UniqueIdentifier>{baa95c4c-3305-4645-972c-4e611eb3242c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="fraction.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="derivation\overload\account.cpp">
+      <Filter>Source Files\derivation\overload</Filter>
+    </ClCompile>
+    <ClCompile Include="derivation\overload\animal.cpp">
+      <Filter>Source Files\derivation\overload</Filter>
+    </ClCompile>
+    <ClCompile Include="funcs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="derivation\assigncopy\bank.cpp">
+      <Filter>Source Files\derivation\assigncopy</Filter>
+    </ClCompile>
+    <ClCompile Include="std2qt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="fraction.h">
+    <ClInclude Include="derivation\overload\account.h">
+      <Filter>Header Files\derivation\overload</Filter>
+    </ClInclude>
+    <ClInclude Include="derivation\overload\animal.h">
+      <Filter>Header Files\derivation\overload</Filter>
+    </ClInclude>
+    <ClInclude Include="derivation\assigncopy\bank.h">
+      <Filter>Header Files\derivation\assigncopy</Filter>
+    </ClInclude>
+    <ClInclude Include="std2qt.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

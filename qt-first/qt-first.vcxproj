@@ -136,11 +136,18 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="fraction.cpp" />
+    <ClCompile Include="derivation\assigncopy\bank.cpp" />
+    <ClCompile Include="derivation\overload\account.cpp" />
+    <ClCompile Include="derivation\overload\animal.cpp" />
+    <ClCompile Include="funcs.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="std2qt.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="fraction.h" />
+    <ClInclude Include="derivation\assigncopy\bank.h" />
+    <ClInclude Include="derivation\overload\account.h" />
+    <ClInclude Include="derivation\overload\animal.h" />
+    <ClInclude Include="std2qt.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="debug\moc_predefs.h.cbt">
