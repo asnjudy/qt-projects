@@ -136,6 +136,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="derivation\argumentlist\argumentlist.cpp" />
     <ClCompile Include="derivation\assigncopy\bank.cpp" />
     <ClCompile Include="derivation\overload\account.cpp" />
     <ClCompile Include="derivation\overload\animal.cpp" />
@@ -144,6 +145,7 @@
     <ClCompile Include="std2qt.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="derivation\argumentlist\argumentlist.h" />
     <ClInclude Include="derivation\assigncopy\bank.h" />
     <ClInclude Include="derivation\overload\account.h" />
     <ClInclude Include="derivation\overload\animal.h" />

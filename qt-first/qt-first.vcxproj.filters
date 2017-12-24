@@ -43,6 +43,12 @@
     <Filter Include="Source Files\derivation\assigncopy">
       <UniqueIdentifier>{baa95c4c-3305-4645-972c-4e611eb3242c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\derivation\argumentlist">
+      <UniqueIdentifier>{438ba721-1766-4344-9617-a5f9b4f49a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\derivation\argumentlist">
+      <UniqueIdentifier>{ba65dace-6bb2-43bc-8169-82c56ee9b26d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -63,6 +69,9 @@
     <ClCompile Include="std2qt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="derivation\argumentlist\argumentlist.cpp">
+      <Filter>Source Files\derivation\argumentlist</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="derivation\overload\account.h">
@@ -76,6 +85,9 @@
     </ClInclude>
     <ClInclude Include="std2qt.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="derivation\argumentlist\argumentlist.h">
+      <Filter>Header Files\derivation\argumentlist</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

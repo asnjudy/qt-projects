@@ -4,6 +4,7 @@
 #include "derivation\overload\account.h"
 #include "derivation\overload\animal.h"
 #include "derivation\assigncopy\bank.h"
+#include "derivation\argumentlist\argumentlist.h"
 #include "std2qt.h"
 using namespace std2qt;
 
@@ -52,4 +53,36 @@ void testBank()
 	qDebug() << listing;
 	qDebug() << "Now exit program";
 }
+
+
+void runTestOnly(QStringList & arglist, bool verbose)
+{
+	foreach(const QString &current, arglist) {
+		if (verbose) {
+			qDebug() << QString("Do something chatty with %1.").arg(current);
+		}
+		else {
+			qDebug() << current;
+		}
+	}		
+}
+
+void testArgumentList(int argc, char *argv[])
+{
+	ArgumentList arglist(argc, argv);
+	QString appname = arglist.takeFirst();
+
+	qDebug() << "Running " << appname;
+
+	bool verbose = arglist.getSwitch("-v");
+	bool testing = arglist.getSwitch("-t");
+
+	if (testing) {
+		runTestOnly(arglist, verbose);
+	}
+	else {
+		qDebug() << "This is not a test";
+	}
+}
+
 
